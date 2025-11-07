@@ -25,7 +25,9 @@
 #         print( num * i)
 #     inp = input("do you want to exit ?? (yes / no  ")
 #     if inp == "yes":
-# #        break   
+# #        break  
+# 
+# --- Function --- 
 # def print_hello():
 #     print("Hello world")
 
@@ -39,10 +41,17 @@
 # result = sum()
 # print(result)
 
-def add(a , b):
- result = a + b
- print(result)
+# def add(a , b):
+#  result = a + b
+#  print(result)
 
-n1 = int(input("first number = "))
-n2 = int(input("second number = ")) 
-add(n1 , n2)
+# n1 = int(input("first number = "))
+# n2 = int(input("second number = ")) 
+# add(n1 , n2)
+
+def area(side):
+    return side * side
+side = int(input("Enter side of square = "))
+result = area(side)
+print(result) 
+
