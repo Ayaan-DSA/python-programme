@@ -18,6 +18,13 @@ class college :
 
     def __init__(self, name):
         self.name = name
+    def info(self):
+        print(f"The name of student is {self.name} and college is {college.colleges}")
+
+info1 = college("abhi")
+info1.info()
+info2 = college("adi")
+info2.info()
 s1 = college("abhi")
 s2 = college ("adi")
 
