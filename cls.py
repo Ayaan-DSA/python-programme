@@ -43,7 +43,7 @@
 # fruit1 = fruits ("mango")
 # fruit1.__str__()
 
-# Encapsulation (Protecting Data)
+# ------Encapsulation (Protecting Data)-----
 
 class bankacc:
     def __init__(self, balance):
@@ -62,6 +62,7 @@ class bankacc:
 acc1 = bankacc(1000)
 print (f"initial bal = {acc1.balance}")
 acc1.deposit(500)
+print(acc1.balance)
 acc1.show()
 acc1.withdraw(400)
 
