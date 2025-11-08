@@ -21,7 +21,7 @@ class college :
 s1 = college("abhi")
 s2 = college ("adi")
 
-print(s1.name) #abhi
-print(s2.name) #adi
+print(s1.name, college.colleges) #abhi
+print(s2.name , college.colleges) #adi
 print(college.colleges) #abc college
         
