@@ -13,22 +13,56 @@
 # print(car1.brand) #BMW
 # print(car2.model) #XS
 
-class college :
-    colleges = " abc college"
+# class with methods
 
-    def __init__(self, name):
-        self.name = name
-    def info(self):
-        print(f"The name of student is {self.name} and college is {college.colleges}")
+# class college :
+#     colleges = " abc college"
 
-info1 = college("abhi")
-info1.info()
-info2 = college("adi")
-info2.info()
-s1 = college("abhi")
-s2 = college ("adi")
+#     def __init__(self, name):
+#         self.name = name
+#     def info(self):
+#         print(f"The name of student is {self.name} and college is {college.colleges}")
 
-print(s1.name, college.colleges) #abhi
-print(s2.name , college.colleges) #adi
-print(college.colleges) #abc college
-        
+# info1 = college("abhi")
+# info1.info()
+# info2 = college("adi")
+# info2.info()
+# s1 = college("abhi")
+# s2 = college ("adi")
+
+# print(s1.name, college.colleges) #abhi
+# print(s2.name , college.colleges) #adi
+# print(college.colleges) #abc college
+
+
+# class fruits:
+#         def __init__ (self, name):
+#           self.name = name 
+#         def __str__(self):
+#              print(f"The fruit name is {self.name}")
+# fruit1 = fruits ("mango")
+# fruit1.__str__()
+
+# Encapsulation (Protecting Data)
+
+class bankacc:
+    def __init__(self, balance):
+        self.balance = balance
+    def deposit(self, amt):
+        self.balance+= amt
+    def show(self):
+        print(f"Your new balance after deposit is {self.balance}")
+    def withdraw(self, amt):
+        if amt > self.balance:
+            print("Not enough balance")
+            print(f"your balance is {self.balance}")
+        else:
+            self.balance -= amt
+            print(f"Your new balance after withdrawal is {self.balance}")    
+acc1 = bankacc(1000)
+print (f"initial bal = {acc1.balance}")
+acc1.deposit(500)
+acc1.show()
+acc1.withdraw(400)
+
+      
