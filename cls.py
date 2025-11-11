@@ -45,25 +45,48 @@
 
 # ------Encapsulation (Protecting Data)-----
 
-class bankacc:
-    def __init__(self, balance):
-        self.balance = balance
-    def deposit(self, amt):
-        self.balance+= amt
-    def show(self):
-        print(f"Your new balance after deposit is {self.balance}")
-    def withdraw(self, amt):
-        if amt > self.balance:
-            print("Not enough balance")
-            print(f"your balance is {self.balance}")
-        else:
-            self.balance -= amt
-            print(f"Your new balance after withdrawal is {self.balance}")    
-acc1 = bankacc(1000)
-print (f"initial bal = {acc1.balance}")
-acc1.deposit(500)
-print(acc1.balance)
-acc1.show()
-acc1.withdraw(400)
+# class bankacc:
+#     def __init__(self, balance):
+#         self.balance = balance
+#     def deposit(self, amt):
+#         self.balance+= amt
+#     def show(self):
+#         print(f"Your new balance after deposit is {self.balance}")
+#     def withdraw(self, amt):
+#         if amt > self.balance:
+#             print("Not enough balance")
+#             print(f"your balance is {self.balance}")
+#         else:
+#             self.balance -= amt
+#             print(f"Your new balance after withdrawal is {self.balance}")    
+# acc1 = bankacc(1000)
+# print (f"initial bal = {acc1.balance}")
+# acc1.deposit(500)
+# print(acc1.balance)
+# acc1.show()
+# acc1.withdraw(400)
 
+
+# str = "tene"
+# st2 = str[::-1]
+# print(st2)
+# if str == str[::-1]:
+#     print("palindrome")
       
+
+# def table(num):
+#     for i in range(1, 11):
+#         print(num * i)
+        
+
+# num = int(input("Enter a number = "))
+# table(num)    
+def reverse (num):
+    rev = 0 
+    while(num>0):
+        rev = rev * 10 + num % 10
+        num = num // 10
+    return rev
+num = int(input("Enter a number = "))
+result = reverse(num)
+print("Reversed number = ", result)
